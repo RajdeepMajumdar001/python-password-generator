@@ -10,15 +10,23 @@ print ("2. Complex")
 choice = input("Enter your choice (1/2): ")
 if choice == "1":
     l = 8
-    u = UC + LC + DIG
+    u = UC + LC+ DIG
+    p = secrets.choice(UC) + secrets.choice(LC) + secrets.choice(DIG)
+
 elif choice == "2":
     l = 12
     u = UC + LC + DIG + SPE
+    p = secrets.choice(UC) + secrets.choice(LC) + secrets.choice(DIG) + secrets.choice(SPE)
 else:
     print("Invalid choice!")
     exit()
-p = ""
-for i in range(l):
-    c  =  secrets.choice(u)
-    p += c
+
+for i in range(l-len(p)):
+    p +=  secrets.choice(u)
+
+password_list = list(p)
+secrets.SystemRandom().shuffle(password_list)
+p = ''.join(password_list)
+
+    
 print ("generated password : ",p)
