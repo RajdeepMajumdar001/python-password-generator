@@ -38,3 +38,17 @@ Choose Password complexity
 
 Enter your choice (1/2):
 ```
+## Project Objective
+
+The objective of this project is to develop a secure and user-friendly command-line password generator using Python.
+
+The project focuses on:
+
+- Understanding Python's built-in modules and libraries.
+- Implementing cryptographically secure random password generation using the `secrets` module.
+- Applying conditional statements, loops and string manipulation.
+- Ensuring password complexity requirements.
+- Handling invalid user inputs.
+- Practising Git and GitHub for version control and project documentation.
+
+This project serves as a practical application of Python fundamentals and secure programming concepts.
