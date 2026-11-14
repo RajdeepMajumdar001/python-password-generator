@@ -21,3 +21,20 @@ git clone https://github.com/RajdeepMajumdar001/python-password-generator.git
 ```bash
 cd python-password-generator
 ```
+## Usage
+
+**Run the program:**
+
+```bash
+python main.py
+```
+
+**Select your preferred password complexity:**
+
+```text
+Choose Password complexity
+1. Simple
+2. Complex
+
+Enter your choice (1/2):
+```
