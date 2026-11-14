@@ -1,2 +1,4 @@
 # PASSWORD-GENERATOR
-A simple CLI password generator using python . Here we will use secrets module from python to make a strong password
+A simple and secure command-line password generator built using Python's standard library.
+
+Generate random passwords with two complexity levels: Simple and Complex.
