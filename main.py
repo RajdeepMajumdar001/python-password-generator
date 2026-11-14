@@ -7,19 +7,22 @@ SPE = string.punctuation
 print ("\nChoose Passwrod complexity")
 print ("1. Simple ")
 print ("2. Complex")
-choice = input("Enter your choice (1/2): ")
-if choice == "1":
+while True:
+ choice = input("Enter your choice (1/2): ")
+ if choice == "1":
     l = 8
     u = UC + LC+ DIG
     p = secrets.choice(UC) + secrets.choice(LC) + secrets.choice(DIG)
+    break
 
-elif choice == "2":
+ elif choice == "2":
     l = 12
     u = UC + LC + DIG + SPE
     p = secrets.choice(UC) + secrets.choice(LC) + secrets.choice(DIG) + secrets.choice(SPE)
-else:
-    print("Invalid choice!")
-    exit()
+    break
+ else:
+    print("Invalid choice!, enter again input")
+    
 
 for i in range(l-len(p)):
     p +=  secrets.choice(u)
