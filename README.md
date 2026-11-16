@@ -7,6 +7,7 @@ Generate random passwords with two complexity levels: Simple and Complex.
 - Python 3
 - Secrets
 - string
+- pytest
 
 ## Installation
 
